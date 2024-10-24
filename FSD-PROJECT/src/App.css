@@ -1,0 +1,79 @@
+.maaz{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Distributes cards evenly */
+  gap: 20px; /* Adds spacing between the cards */
+  padding: 20px;
+}
+/* Container for the cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Distributes cards evenly */
+  gap: 20px; /* Adds spacing between the cards */
+  padding: 20px; /* Padding around the container */
+}
+
+/* Individual card styling */
+.card {
+  width: 18rem; /* Fixed width for the cards */
+  border: 1px solid #ddd; /* Light border around the cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+  overflow: hidden; /* Prevents content overflow */
+  background-color: #fff; /* Background color of the cards */
+}
+
+/* Card image styling */
+.card img {
+  width: 100%; /* Full width of the card */
+  height: auto; /* Auto height based on image aspect ratio */
+  object-fit: cover; /* Ensures the image covers the entire card top */
+}
+
+/* Card body content */
+.card-body {
+  padding: 15px; /* Adds padding inside the card */
+}
+
+/* Card title styling */
+.card-title {
+  font-size: 1.25rem; /* Slightly larger font for the title */
+  margin-bottom: 10px; /* Spacing between the title and text */
+  font-weight: bold; /* Bold font for the title */
+  color: #333; /* Dark color for the title */
+}
+
+/* Card description text */
+.card-text {
+  font-size: 1rem; /* Standard font size for the description */
+  color: #666; /* Gray color for the description */
+  margin-bottom: 15px; /* Spacing between text and button */
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: #fff; /* White text color */
+  padding: 10px 15px; /* Padding for the button */
+  text-align: center; /* Center the button text */
+  display: inline-block; /* Display as inline block */
+  border-radius: 4px; /* Slightly rounded corners */
+  text-decoration: none; /* Remove underline */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .card-container {
+    justify-content: center; /* Center cards on smaller screens */
+  }
+
+  .card {
+    width: 100%; /* Cards take full width on smaller screens */
+    max-width: 400px; /* Limit maximum width */
+  }
+}
